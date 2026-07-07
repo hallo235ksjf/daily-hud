@@ -15,6 +15,7 @@ import androidx.activity.viewModels
 import androidx.core.content.ContextCompat
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
+import com.halel.dailyhud.ui.MainScreen
 
 class MainActivity : ComponentActivity() {
 

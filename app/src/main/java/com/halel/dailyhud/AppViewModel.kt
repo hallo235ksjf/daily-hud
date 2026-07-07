@@ -10,13 +10,13 @@ import kotlinx.coroutines.flow.asStateFlow
 class AppViewModel(app: Application) : AndroidViewModel(app) {
     private val repo = Repository(app)
 
-    private val _tasks = MutableStateFlow(repo.loadTasks())
+    private val _tasks = MutableStateFlow<List<Task>>(repo.loadTasks())
     val tasks: StateFlow<List<Task>> = _tasks.asStateFlow()
 
-    private val _alarms = MutableStateFlow(repo.loadAlarms())
+    private val _alarms = MutableStateFlow<List<Alarm>>(repo.loadAlarms())
     val alarms: StateFlow<List<Alarm>> = _alarms.asStateFlow()
 
-    private val _notes = MutableStateFlow(repo.loadNotes())
+    private val _notes = MutableStateFlow<List<Note>>(repo.loadNotes())
     val notes: StateFlow<List<Note>> = _notes.asStateFlow()
 
     private val _settings = MutableStateFlow(repo.loadSettings())
