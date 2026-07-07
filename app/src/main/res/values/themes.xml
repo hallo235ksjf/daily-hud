@@ -1,0 +1,6 @@
+<resources>
+    <style name="Theme.DailyHud" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">#0a0e12</item>
+        <item name="android:windowBackground">#070a0d</item>
+    </style>
+</resources>
